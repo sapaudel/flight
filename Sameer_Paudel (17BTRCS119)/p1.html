@@ -1,0 +1,126 @@
+<html>
+<head></head>
+<body>
+<style>
+
+body, html {
+  height: 100%;
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+ 
+  background-image: url("samm.jpg");
+
+  
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  
+  height: 100%; 
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.copyr {
+  
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+ 
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 10%;
+  padding: 5px;
+  text-align: right;
+}
+
+
+
+.bgg-text {
+  background-color: rgb(0,1,0); 
+  background-color: rgba(0,0,0, 0.7); 
+  color: white;
+  font-weight: bold;
+  border: 4px solid #f1f1f1;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 75%;
+  padding: 5px;
+  text-align: center;
+}
+
+
+.info-text {
+  background-color: rgb(0,1,0); 
+  background-color: rgba(0,0,0, 0.7); 
+  color: white;
+  font-weight: bold;
+  border: 4px solid #f1f1f1;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 30%;
+  padding: 5px;
+  text-align: center;
+}  
+
+
+
+</style>
+<div class="bg-image"></div>
+<div class="bgg-text">
+<pre><center><font size="5px"> <a href="Mainpage.html" style="color:white" >Home</a></font>       | <font size="5px">  <a href="Aboutme.html" style="color:white">About Me</a></font>      |   <font size="5px"> <a href="contact.html" style="color:white">Contact</a></font>    |  <font size="5px">    <a href="Feedback.html" style="color:white">Feedback</a></font>    |  <font size="5px">    <a href="hobbies.html" style="color:white">Hobbies</a></font> |  <font size="5px">    <a href="lab.html" style="color:white">Lab Programs</a></font></pre>
+
+</div>
+
+
+<div class="info-text">
+
+1.DIE PROGRAM<br>
+Die1:<br>
+<input type="text" id="101"><br/>
+Die2:<br>
+<input type="text" id="102"><br/>
+Total:<br>
+<input type="text" id="104" ><br/>
+<button  id="103" onclick="rollDice()">submit</button>
+<script type="text/javascript">
+function rollDice() {
+ var side1 = Math.floor( Math.random() * 6 ) + 1;
+document.getElementById( "101" ).value=side1;
+        var side2 = Math.floor( Math.random() * 6 ) + 1;
+document.getElementById( "102" ).value=side2 ;
+        var diceTotal = side1 + side2;
+document.getElementById(  "104").value=diceTotal ;
+if ( diceTotal==12 ) {
+            alert ( ' You won!');
+        }
+    }
+
+</script>
+
+
+
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,119 @@
+<html>
+<head></head>
+<body>
+<style>
+body, html {
+height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+
+
+.bg-image {
+background-image: url("samm.jpg");
+filter: blur(8px);
+-webkit-filter: blur(8px);
+height: 100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.copyr {
+  
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+ 
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 10%;
+  padding: 5px;
+  text-align: right;
+}
+
+
+.bgg-text {
+  background-color: rgb(0,1,0); 
+  background-color: rgba(0,0,0, 0.7); 
+  color: white;
+  font-weight: bold;
+  border: 4px solid #f1f1f1;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 60%;
+  padding: 5px;
+  text-align: center;
+}
+
+
+.info-text {
+  background-color: rgb(0,1,0); 
+  background-color: rgba(0,0,0, 0.7); 
+  color: white;
+  font-weight: bold;
+  border: 4px solid #f1f1f1;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+}  
+
+
+</style>
+<div class="bg-image"></div>
+<div class="bgg-text">
+<pre><center><font size="5px"> <a href="Mainpage.html" style="color:white" >Home</a></font>       | <font size="5px">  <a href="Aboutme.html" style="color:white">About Me</a></font>      |   <font size="5px"> <a href="contact.html" style="color:white">Contact</a></font>    |  <font size="5px">    <a href="Feedback.html" style="color:white">Feedback</a></font>    |  <font size="5px">    <a href="hobbies.html" style="color:white">Hobbies</a></font></pre>
+</div>
+
+
+<div class="info-text">
+<ul type="Disc">
+
+<form align="left">
+<li><label>First Name:&nbsp;&nbsp;</label><input type="text"/><br></li></form>
+<form align="left"><li><label>Last Name:&nbsp;&nbsp;</label><input type="text"/><br></li></form>
+
+<form align="left"><li><label>Address:&nbsp;</label><input name="text1" type="text" size="25" max length="50"><br></form>
+<form align="left"><li><label>City:&nbsp;&nbsp;</label> &nbsp;&nbsp;&nbsp; <input name="text1" type="text" size="25" max length="50"><br></form>
+<form align="left"><li><label>State/provience</label><input type="text"/><br></form>
+
+<form align="left"><li><label>Country</label><select>
+<form align="left"><option>Nepal</option>>America</option><option>China</option><option>Russia</option><option>India</option><option>Mexico</option></select><br></form>
+<form align="left"><li><label>Email:</label><input type="text"/><br></form>
+<form align="left"><li><label>photo: </label><input type="file"/><br></form>
+
+
+<form align="left"><li><label>Rate My webpages:</label>
+<input type="radio" name="Rating" value="1"/>1
+<input type="radio" name="" value="2"/>2
+<input type="radio" name="" value="3"/>3
+<input type="radio" name="" value="4"/>4
+<input type="radio" name="" value="5"/>5<br></form></li>
+<form align="left"><textarea name="message" style="width:400px; height:200px;">Feedbacks are Encouraged</textarea><br>
+</ul>
+<input id="skip_Submit" name="skip_Submit" type="submit" value="Submit" />
+<input id="skip_submit" name="skip_submit" type="submit" value="cancel" />
+
+</div>
+<div class="copyr">
+<marquee><img src="copy.jpg" "height:10px; width:10px;"></marquee>
+</div>
+
+</body>
+
+
+
+
+</html>
